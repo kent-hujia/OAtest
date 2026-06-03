@@ -1,0 +1,251 @@
+ <!DOCTYPE html>                                                                                                                                 
+    <html lang="zh-Hant">                                                                                                                           
+    <head>                                                                                                                                          
+      <meta charset="UTF-8" />                                                                                                                      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>                                                                       
+      <title>關節使用小記錄</title>                                                                                                                 
+      <style>                                                                                                                                       
+        body {                                                                                                                                      
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;                                                                   
+          background: #f7f9fb;                                                                                                                      
+          margin: 0;                                                                                                                                
+          padding: 20px;                                                                                                                            
+          color: #333;                                                                                                                              
+        }                                                                                                                                           
+        .container {                                                                                                                                
+          max-width: 420px;                                                                                                                         
+          margin: auto;                                                                                                                             
+          background: #fff;                                                                                                                         
+          border-radius: 12px;                                                                                                                      
+          padding: 20px;                                                                                                                            
+          box-shadow: 0 2px 8px rgba(0,0,0,0.05);                                                                                                   
+        }                                                                                                                                           
+        h1 {                                                                                                                                        
+          font-size: 20px;                                                                                                                          
+          text-align: center;                                                                                                                       
+text-align：中心;
+        }                                                                                                                                           
+        .question {                                                                                                                                 
+          margin-top: 20px;                                                                                                                         
+邊距至頂端：20px;
+        }                                                                                                                                           
+        .option {                                                                                                                                   
+          display: block;                                                                                                                           
+          margin: 8px 0;                                                                                                                            
+          cursor: pointer;                                                                                                                          
+游標：指標;
+        }                                                                                                                                           
+        .option input {                                                                                                                             
+          margin-right: 8px;                                                                                                                        
+        }                                                                                                                                           
+        button {                                                                                                                                    
+          width: 100%;                                                                                                                              
+          padding: 12px;                                                                                                                            
+          background: #4a90e2;                                                                                                                      
+          color: #fff;                                                                                                                              
+          border: none;                                                                                                                             
+          border-radius: 8px;                                                                                                                       
+邊界半徑：8px;
+          font-size: 16px;                                                                                                                          
+字體大小：16px;
+          margin-top: 20px;                                                                                                                         
+邊距至頂端：20px;
+邊距至頂端：20px;
+          cursor: pointer;                                                                                                                          
+游標：指標;
+          font-weight: bold;                                                                                                                        
+字體粗大：粗體;
+        }                                                                                                                                           
+        button:hover {                                                                                                                              
+按鈕：懸停 {
+按鈕：懸停 {
+          background: #357abd;                                                                                                                      
+背景：#357abd;
+        }                                                                                                                                           
+        .result {                                                                                                                                   
+.結果 {
+.結果 {
+.結果 {
+          margin-top: 20px;                                                                                                                         
+邊距至頂端：20px;
+邊距至頂端：20px;
+邊距至頂端：20px;
+          background: #f0f4f8;                                                                                                                      
+背景：#f0f4f8;
+          padding: 15px;                                                                                                                            
+填充：15px;
+          border-radius: 8px;                                                                                                                       
+邊界半徑：8px;
+邊界半徑：8px;
+          display: none;                                                                                                                            
+顯示：無;
+顯示：無;
+        }                                                                                                                                           
+        .result strong {                                                                                                                            
+.結果強 {
+.結果強 {
+          color: #2c3e50;                                                                                                                           
+顏色：#2c3e50;
+          display: block;                                                                                                                           
+顯示：方塊;
+          margin-bottom: 8px;                                                                                                                       
+        }                                                                                                                                           
+        .small {                                                                                                                                    
+          font-size: 12px;                                                                                                                          
+字體大小：12px;
+字體大小：12px;
+          color: #666;                                                                                                                              
+顏色：#666;
+顏色：#666;
+          margin-top: 10px;                                                                                                                         
+          text-align: center;                                                                                                                       
+        }                                                                                                                                           
+        .divider {                                                                                                                                  
+          margin: 16px 0;                                                                                                                           
+          border-top: 1px dashed #ccc;                                                                                                              
+        }                                                                                                                                           
+      </style>                                                                                                                                      
+    </head>                                                                                                                                         
+    <body>                                                                                                                                          
+                                                                                                                                                    
+    <div class="container" id="formPage">                                                                                                           
+      <h1>關節使用小記錄</h1>                                                                                                                       
+      <p class="small">花 30 秒記錄自己的感覺（不是檢查）</p>                                                                                       
+                                                                                                                                                    
+      <div class="question">                                                                                                                        
+        <strong>1. 最近關節活動感覺？</strong>                                                                                                      
+        <label class="option"><input type="radio" name="q1" value="比之前順"> 比之前順</label>                                                      
+        <label class="option"><input type="radio" name="q1" value="跟平常一樣"> 跟平常一樣</label>                                                  
+        <label class="option"><input type="radio" name="q1" value="稍微卡卡"> 稍微卡卡</label>                                                      
+        <label class="option"><input type="radio" name="q1" value="會酸痛或不舒服"> 會酸痛或不舒服</label>                                          
+      </div>                                                                                                                                        
+                                                                                                                                                    
+      <div class="question">                                                                                                                        
+        <strong>2. 最近關節使用頻率或負擔強度？</strong>                                                                                            
+        <label class="option"><input type="radio" name="q2" value="正常使用"> 正常使用</label>                                                      
+        <label class="option"><input type="radio" name="q2" value="運動或重體力勞動多"> 運動或重體力勞動多</label>                                  
+        <label class="option"><input type="radio" name="q2" value="久坐久站少活動"> 久坐久站少活動</label>                                          
+      </div>                                                                                                                                        
+                                                                                                                                                    
+      <div class="question">                                                                                                                        
+        <strong>3. 您有採取什麼關節保養措施嗎？</strong>                                                                                            
+        <label class="option"><input type="radio" name="q3" value="補充營養品/溫和運動"> 補充營養品 / 溫和運動</label>                              
+        <label class="option"><input type="radio" name="q3" value="充分休息與睡眠"> 充分休息與睡眠</label>                                          
+        <label class="option"><input type="radio" name="q3" value="熱敷或按摩"> 熱敷或按摩</label>                                                  
+        <label class="option"><input type="radio" name="q3" value="沒有特別保養"> 沒有特別保養</label>                                              
+      </div>                                                                                                                                        
+                                                                                                                                                    
+      <button onclick="calculateResult()">送出記錄</button>                                                                                         
+                                                                                                                                                    
+      <div class="result" id="resultBox">                                                                                                           
+        <strong>📊 評估建議：</strong>                                                                                                              
+        <p id="resultText" style="line-height: 1.5; margin: 0;"></p>                                                                                
+        <div class="divider"></div>                                                                                                                 
+        <p class="small" style="text-align: left; margin-top: 5px;">* 本記錄僅為自我感覺整理，非醫療診斷，如有持續不適請諮詢專業醫師。</p>          
+      </div>                                                                                                                                        
+    </div>                                                                                                                                          
+                                                                                                                                                    
+    <script>                                                                                                                                        
+    function calculateResult() {                                                                                                                    
+function calculateResult（） {
+function calculateResult（） {
+      const q1 = document.querySelector('input[name="q1"]:checked');                                                                                
+const q1 = document.querySelector（'input[name=“q1”]：checked'）;
+const q1 = document.querySelector（'input[name=“q1”]：checked'）;
+      const q2 = document.querySelector('input[name="q2"]:checked');                                                                                
+const q2 = document.querySelector（'input[name=“q2”]：checked'）;
+      const q3 = document.querySelector('input[name="q3"]:checked');                                                                                
+const q3 = document.querySelector（'input[name=“q3”]：checked'）;
+const q3 = document.querySelector（'input[name=“q3”]：checked'）;
+                                                                                                                                                    
+      // 檢查是否所有問題皆已回答                                                                                                                   
+      if (!q1 || !q2 || !q3) {                                                                                                                      
+如果 （！q1 || ！q2 || ！q3） {
+如果 （！q1 || ！q2 || ！q3） {
+如果 （！q1 ||！q2 ||！q3） {
+如果 （！q1 || ！q2 || ！q3） {
+如果 （！q1 ||！q2 ||！q3） {
+如果 （！q1 ||！q2 ||！q3） {
+如果 （！q1 || ！q2 || ！q3） {
+如果 （！q1 ||！q2 ||！q3） {
+如果 （！q1 ||！q2 ||！q3） {
+        alert("請填寫所有問題後再送出！");                                                                                                          
+alert（“請填寫所有問題後再送出！”）;
+alert（“請填寫所有問題後再送出！”）;
+alert（“請填寫所有問題後再送出！”）;
+        return;                                                                                                                                     
+回歸;
+回歸;
+回歸;
+回歸;
+回歸;
+      }                                                                                                                                             
+                                                                                                                                                    
+      const rBox = document.getElementById("resultBox");                                                                                            
+const rBox = document.getElementById（“resultBox”）;
+const rBox = document.getElementById（“resultBox”）;
+const rBox = document.getElementById（“resultBox”）;
+const rBox = document.getElementById（“resultBox”）;
+const rBox = document.getElementById（“resultBox”）;
+const rBox = document.getElementById（“resultBox”）;
+      const rText = document.getElementById("resultText");                                                                                          
+const rText = document.getElementById（“resultText”）;
+const rText = document.getElementById（“resultText”）;
+const rText = document.getElementById（“resultText”）;
+                                                                                                                                                    
+      let suggestion = "";                                                                                                                          
+設 suggestion = “”;
+                                                                                                                                                    
+      // 根據問題 1 的回答給予基本建議                                                                                                              
+      if (q1.value === "比之前順") {                                                                                                                
+如果 （q1.value === “比之前順”） {
+        suggestion = "太棒了！您的關節活動感覺正在改善，請繼續維持良好的運動習慣與營養補充。";                                                      
+建議 = “太棒了！您的關節活動感覺正在改善，請繼續維持良好的運動習慣與營養補充。 ";
+      } else if (q1.value === "跟平常一樣") {                                                                                                       
+} 否則若 （q1.value === “跟平常一樣”） {
+        suggestion = "狀況良好穩定，日常可以適度補充營養素（如非變性二型膠原蛋白、玻尿酸等）來進行預防保健。";                                      
+建議 = “狀況良好穩定，日常可以適度補充營養素（如非變性二型膠原蛋白、玻尿酸等）來進行預防保健。 ";
+建議 = “狀況良好穩定，日常可以適度補充營養素（如非變性二型膠原蛋白、玻尿酸等）來進行預防保健。 ";
+建議 = “狀況良好穩定，日常可以適度補充營養素（如非變性二型膠原蛋白、玻尿酸等）來進行預防保健。 ";
+      } else if (q1.value === "稍微卡卡") {                                                                                                         
+} 否則如果 （q1.value === “稍微卡卡”） {
+} 否則如果 （q1.value === “稍微卡卡”） {
+} 否則如果 （q1.value === “稍微卡卡”） {
+        suggestion = "關節有些許緊繃或卡卡，建議可以做些溫和的拉伸，並充足飲水；適度補充營養品會有幫助。";                                          
+建議 = “關節有些許緊繃或卡卡，建議可以做些溫和的拉伸，並充足飲水;適度補充營養品會有幫助。 ";
+建議 = “關節有些許緊繃或卡卡，建議可以做些溫和的拉伸，並充足飲水;適度補充營養品會有幫助。 ";
+建議 = “關節有些許緊繃或卡卡，建議可以做些溫和的拉伸，並充足飲水;適度補充營養品會有幫助。 ";
+      } else {                                                                                                                                      
+} 否則 {
+        suggestion = "關節有酸痛或不舒服，請充分休息並進行熱敷；若不適感持續，建議諮詢醫療人員或物理治療師。";                                      
+suggestion = “關節有酸痛或不舒服，請充分休息並進行熱敷;若不適感持續，建議諮詢醫療人員或物理治療師。 ";
+      }                                                                                                                                             
+                                                                                                                                                    
+      // 根據問題 2 的回答追加建議                                                                                                                  
+      if (q2.value === "運動或重體力勞動多") {                                                                                                      
+if （q2.value === “運動或重體力勞動多”） {
+        suggestion += " 由於最近活動強度較高，運動前後請加強伸展與修復。";                                                                          
+suggestion += “ 由於最近活動強度較高，運動前後請加強伸展與修復。 ";
+      } else if (q2.value === "久坐久站少活動") {                                                                                                   
+} 否則 （q2.value === “久坐久站少活動”） {
+        suggestion += " 建議每小時起身活動 3-5 分鐘，避免關節因長時間固定姿勢而僵硬。";                                                             
+      }                                                                                                                                             
+                                                                                                                                                    
+      // 根據問題 3 的回答追加鼓勵                                                                                                                  
+      if (q3.value === "沒有特別保養") {                                                                                                            
+        suggestion += " 建議您可以從日常簡單伸展拉筋開始，或向營養師諮詢適合的關節保健食品。";                                                      
+      } else {                                                                                                                                      
+        suggestion += " 很高興您已經有良好的自我保養習慣，請繼續保持！";                                                                            
+      }                                                                                                                                             
+                                                                                                                                                    
+      // 顯示結果                                                                                                                                   
+      rText.textContent = suggestion;                                                                                                               
+      rBox.style.display = "block";                                                                                                                 
+                                                                                                                                                    
+      // 平滑滾動到結果畫面                                                                                                                         
+      rBox.scrollIntoView({ behavior: 'smooth' });                                                                                                  
+    }                                                                                                                                               
+    </script>                                                                                                                                       
+                                                                                                                                                    
+    </body>                                                                                                                                         
+    </html>               
